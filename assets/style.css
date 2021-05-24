@@ -27,15 +27,15 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: black;
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 5px;
+  background-color: hsl(0, 0%, 71%);
+  border-radius: 10px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  color: black;
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
@@ -86,6 +86,7 @@ header {
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
+  border: 2px solid black;
 }
 
 button[disabled] {
@@ -134,4 +135,8 @@ button[disabled] {
   .btn {
     font-size: 0.8rem;
   }
+}
+
+.btn:hover {
+    background-color:rgba(252, 4, 4, 0.15);
 }

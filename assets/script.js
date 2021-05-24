@@ -2,7 +2,7 @@
 
 // USER INPUT VARIABLES
 
-let passwordLength = prompt('How many characters in your password (8 - 20)?');
+let passwordLength = prompt('How many characters in your password (8 - 128)?');
 let passwordUC = confirm ('Include uppercase letters');
 let passwordNUM = confirm ('Include numbers');
 let passwordSYM = confirm ('Include symbols');
