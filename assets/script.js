@@ -1,4 +1,4 @@
-"use strict";
+"use strict"; // strict mode to track errors and possible future variable conflicts
 
 // USER INPUT VARIABLES
 
@@ -6,6 +6,23 @@ let passwordLength = prompt('How many characters in your password (8 - 128)?');
 let passwordUC = confirm ('Include uppercase letters');
 let passwordNUM = confirm ('Include numbers');
 let passwordSYM = confirm ('Include symbols');
+
+const button = document.getElementById('generate'); // link to button in html document
+button.addEventListener('click', e => {
+    e.preventDefault() // prevent auto refresh after submit
+    let length = passwordLength;
+    let upperCase = passwordUC;
+    let pNumber = passwordNUM;
+    let symbol = passwordSYM;
+    
+    // console.log(length);
+    // console.log(upperCase);
+    // console.log(pNumber);
+    // console.log(symbol);
+
+    let password = generatePassword(length, upperCase, pNumber, symbol);
+
+}) 
 
 
 
