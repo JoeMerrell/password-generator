@@ -16,7 +16,7 @@ let SYMBOL_ASCII = arrayFromLowToHigh(33, 47).concat( // ASCII for special chara
   arrayFromLowToHigh(91, 96)).concat(
   arrayFromLowToHigh(123, 126))
 
-let passwordGenerated = document.getElementById('password') // links to empty password field in html card container
+let passwordGenerated = document.getElementById('password') // link to empty password field in html card container
 
 const button = document.getElementById('generate'); // link to button in html document
 button.addEventListener('click', e => {
